@@ -1,8 +1,0 @@
-com\example\rs\JaxRsApiApplication.class
-com\example\rs\PeopleRestService.class
-com\example\model\Person.class
-com\example\exceptions\PersonAlreadyExistsException.class
-com\example\exceptions\PersonNotFoundException.class
-com\example\config\AppConfig.class
-com\example\services\PeopleService.class
-com\example\Starter.class
