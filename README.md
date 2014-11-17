@@ -19,3 +19,8 @@ In Eclipse simply run `org.devel.springfx.client.Starter` as Java application.
 
 ###Technology Stack
 * Apache CXF Client Proxy
+
+##Further Documentation
+* http://aredko.blogspot.de/2013/01/going-rest-embedding-jetty-with-spring.html
+* http://cxf.apache.org/docs/jax-rs-client-api.html
+* http://cxf.apache.org/docs/jax-rs.html
