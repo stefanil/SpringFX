@@ -12,9 +12,10 @@ In Eclipse simply run `org.devel.springfx.server.Starter` as Java application.
 * Apache CXF (JAX-RS)
 
 ##Client
-
-###Technology Stack
-* Apache CXF Client Proxy
+A simple demo client for accessing the serverside REST-API.
 
 ###Getting Started
 In Eclipse simply run `org.devel.springfx.client.Starter` as Java application.
+
+###Technology Stack
+* Apache CXF Client Proxy
