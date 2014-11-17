@@ -6,10 +6,6 @@ This module encapsulates an embedded Jetty server for exposing a RESTful interfa
 ###Getting Started
 In Eclipse simply run `org.devel.springfx.server.Starter` as Java application.
 
-From console run the following command to start the application:
-
-    TODO: Depending Library for resolving javax.servlet.Servlet must be included (implementing one-jar-approach).
-
 ###Technology Stack
 * (embedded) Jetty
 * Spring
@@ -18,4 +14,7 @@ From console run the following command to start the application:
 ##Client
 
 ###Technology Stack
-* JavaFX
+* Apache CXF Client Proxy
+
+###Getting Started
+In Eclipse simply run `org.devel.springfx.client.Starter` as Java application.
