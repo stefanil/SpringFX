@@ -40,5 +40,6 @@ public class Person {
 	
 	public void setLastName( final String lastName ) {
 		this.lastName = lastName;
-	}		
+	}
+	
 }

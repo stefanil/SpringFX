@@ -15,27 +15,24 @@
 	</properties>
 
 	<dependencies>
-
+	
+		<!-- Common -->
+		<dependency>
+			<groupId>org.devel.springfx</groupId>
+			<artifactId>Common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	
 		<!-- JAX-RS -->
 		<dependency>
 			<groupId>org.apache.cxf</groupId>
 			<artifactId>cxf-rt-frontend-jaxrs</artifactId>
-			<version>2.7.2</version>
+			<version>3.0.2</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.inject</groupId>
 			<artifactId>javax.inject</artifactId>
 			<version>1</version>
-		</dependency>
-		<dependency>
-			<groupId>org.codehaus.jackson</groupId>
-			<artifactId>jackson-jaxrs</artifactId>
-			<version>1.9.11</version>
-		</dependency>
-		<dependency>
-			<groupId>org.codehaus.jackson</groupId>
-			<artifactId>jackson-mapper-asl</artifactId>
-			<version>1.9.11</version>
 		</dependency>
 		<dependency>
 			<groupId>cglib</groupId>

@@ -1,7 +1,7 @@
 package org.devel.springfx.server;
 
 import org.apache.cxf.transport.servlet.CXFServlet;
-import org.devel.springfx.server.config.AppConfig;
+import org.devel.springfx.server.config.GlobalConfiguration;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
@@ -20,7 +20,7 @@ public class Starter {
  		context.addEventListener( new ContextLoaderListener() );
  		
  		context.setInitParameter( "contextClass", AnnotationConfigWebApplicationContext.class.getName() );
- 		context.setInitParameter( "contextConfigLocation", AppConfig.class.getName() );
+ 		context.setInitParameter( "contextConfigLocation", GlobalConfiguration.class.getName() );
  		 		
         server.setHandler( context );
         server.start();

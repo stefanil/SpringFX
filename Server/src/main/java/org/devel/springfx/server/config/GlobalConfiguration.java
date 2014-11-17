@@ -8,6 +8,7 @@ import org.apache.cxf.bus.spring.SpringBus;
 import org.apache.cxf.endpoint.Server;
 import org.apache.cxf.jaxrs.JAXRSServerFactoryBean;
 import org.codehaus.jackson.jaxrs.JacksonJsonProvider;
+import org.devel.springfx.server.rs.IPeopleRestService;
 import org.devel.springfx.server.rs.JaxRsApiApplication;
 import org.devel.springfx.server.rs.PeopleRestService;
 import org.devel.springfx.server.services.PeopleService;
@@ -16,7 +17,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.DependsOn;
 
 @Configuration
-public class AppConfig {
+public class GlobalConfiguration {
 	
 	@Bean( destroyMethod = "shutdown" )
 	public SpringBus cxf() {
@@ -27,7 +28,7 @@ public class AppConfig {
 	public Server jaxRsServer() {
 		JAXRSServerFactoryBean factory = RuntimeDelegate.getInstance().createEndpoint( jaxRsApiApplication(), JAXRSServerFactoryBean.class );
 		factory.setServiceBeans( Arrays.< Object >asList( peopleRestService() ) );
-		factory.setAddress( "/" + factory.getAddress() );
+		factory.setAddress( /* "/" + */ factory.getAddress() );
 		factory.setProviders( Arrays.< Object >asList( jsonProvider() ) );
 		return factory.create();
 	}
@@ -38,7 +39,7 @@ public class AppConfig {
 	}
 	
 	@Bean 
-	public PeopleRestService peopleRestService() {
+	public IPeopleRestService peopleRestService() {
 		return new PeopleRestService();
 	}
 	
